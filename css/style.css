@@ -65,6 +65,10 @@ nav .drawer {
     color: var(--fourth);
 }
 
+#checkbox {
+    display: none; /* oculta el checkbox*/
+}
+
 .dropmenu {
     display: flex;
     flex-wrap: wrap;
@@ -307,5 +311,21 @@ footer a:hover {
     color: var(--third);
 }
 
+/* Responsive Menu */
 
 
+@media (max-width: 768px) {
+    nav .drawer {
+      display: block;
+    }
+  
+    .dropmenu {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    #checkbox:checked ~ .dropmenu {
+      display: flex;
+    }
+  }
