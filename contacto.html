@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Iconos: Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Para los iconos: Una librería json con código para iconos-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-title">
+        <img src="img/logo.png" alt="Logo El Encanto" class="logo">
+        <h1>Casa rural Con Encanto</h1>
+      </div>
+      <input type="checkbox" name="checkbox" id="checkbox">
+      <label for="checkbox" class="drawer">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+      </label>
+      <ul class="dropmenu">
+          <li>
+              <a href="index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+          </li>
+          <li>
+              <a href="#blog"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Noticias</a>
+          </li>
+          <li>
+              <a href="#"><i class="fa fa-users" aria-hidden="true"></i>Quiénes somos</a>
+              <ul>
+                  <li><a href="#">Nuestra historia</a></li>
+                  <li><a href="#">El entorno</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#opiniones"><i class="fa fa-star" aria-hidden="true"></i>Comentarios</a>
+          </li>
+          <li>
+              <a href="#"><i class="fa fa-coffee" aria-hidden="true"></i>Servicios</a>
+              <ul>
+                  <li><a href="#">Alojamiento</a></li>
+                  <li><a href="#">Actividades</a></li>
+                  <li><a href="#">Colaboradores</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Ubicación</a>
+          </li>
+          <li>
+              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contacto</a>
+              <ul>
+                  <li><a href="contacto.html">Escríbenos</a></li>
+                  <li><a href="reserva.html" target="_blank">Reserva</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+  </header>
+  <main class="formulario-contacto">
+    <section class="contacto">
+      <h1>Formulario de Contacto</h1>
+      <form action="#" method="post">
+        <label for="nombre">Nombre y Apellidos</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Ejemplo@ejemplo.com" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Ej:+34 64637645">
+
+        <label for="viaje">¿Cómo viajas?</label>
+          <div class="viaje">
+            <input type="radio" id="solitario" name="viaje" value="solitario">
+            <label for="solitario">Solitario</label>
+        
+            <input type="radio" id="pareja" name="viaje" value="pareja">
+            <label for="pareja">Pareja</label>
+        
+            <input type="radio" id="amigos" name="viaje" value="amigos">
+            <label for="amigos">Amigos</label>
+         
+            <input type="radio" id="familia" name="viaje" value="familia">
+            <label for="familia">Familia</label>
+          </div>
+
+        <label for="tema">¿Sobre qué deseas información?</label>
+        <select id="tema" name="tema" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="alojamiento">Alojamiento</option>
+          <option value="actividades">Actividades</option>
+          <option value="reservas">Reservas</option>
+          <option value="todo">Todo un poco</option>
+        </select>
+
+        <label for="mensaje">Escribe tu mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <div class="checkboxes">
+          <label for="datos">Acepto que almacen mis datos para contactar conmigo.</label>
+          <input type="checkbox" id="datos" name="datos" required>
+        </div>
+        <div class="checkboxes">
+          <label for="blog">Quiero suscribirme al blog de noticias.</label>
+          <input type="checkbox" id="blog" name="blog">
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <aside class="info-contacto">
+      <h2>¿Sabías que...?</h2>
+      <ul>
+        <li><i class="fa fa-leaf" aria-hidden="true"></i> Nuestra casa rural es 100% ecológica</li>
+        <li><i class="fa fa-clock-o" aria-hidden="true"></i> Responderemos tu consulta en menos de 24h</li>
+        <li><i class="fa fa-star" aria-hidden="true"></i> Valoración media de nuestros visitantes: 9,5/10</li>
+        <li><i class="fa fa-gift" aria-hidden="true"></i> Regalo sorpresa con tu primera reserva</li>
+      </ul>
+      <h2>Horarios de Atención</h2>
+      <ul>
+        <li>Lunes a Viernes: 8:00 AM - 21:00 PM</li>
+        <li>Sábados y Domingos: 9:00 AM - 19:00 PM</li>
+      </ul>
+      <h2>Contacto</h2>
+      <ul>
+        <li><i class="fa fa-mobile" aria-hidden="true"></i>+34 6754345661</li>
+        <li><i class="fa fa-phone" aria-hidden="true"></i>+34 9857656780</li>
+        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>ConEncanto@casarural.es</li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <ul>
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Política de cookies</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Política de gestión ambiental</a></li>
+    </ul>
+</footer>
+<div class="copyright">
+  <p>&copy;Web Corporativa creada para la asignatura Lenguaje de Marcas del CFGS DAM
+      <br>Actividad 4 : Web Responsive con HTML y CSS
+  </p>
+</div>
+</body>
+</html>
+
