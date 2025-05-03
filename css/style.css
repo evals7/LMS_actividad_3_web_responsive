@@ -589,4 +589,141 @@ main.formulario button:hover {
     align-items: center;
     gap: 10px;
   }
-  
+
+
+  /*******Alojamiento******/
+  .alojamiento{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    background-color: var(--primary);
+    color: var(--fourth);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+  }
+
+  .alojamiento h1{
+    position: relative;
+    font-size: 2rem;
+    color: var(--fourth);
+    text-align: center;
+  }
+
+  /*Areas comunes*/
+  .areas-comunes{
+    flex: 1;
+    gap: 20px;
+    width: 40%;
+    padding-left: 10px;
+    position: relative;
+    text-align: justify;
+  }
+  .areas-comunes h2{
+    padding-top: 10px;
+  }
+  .areas-comunes img{
+    width: 300px;
+    height: auto;
+    display: inline-block;
+  }
+
+  /*Habitaciones (aside)*/
+  .habitaciones-alojamiento{
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--secondary);
+    color: var(--fourth);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+    text-align: justify;
+
+  }
+
+  .habitaciones-alojamiento h2, h3{
+    color: var(--sixth);
+  }
+  .habitaciones-alojamiento div{
+    padding-top: 10px;
+  }
+
+  .boton-reserva{
+    background-color: var(--third);
+    color: var(--fourth);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .boton-reserva:hover{
+    background-color: var(--fifth);
+    color: var(--fourth);
+  }
+
+  /*****Actividades******/
+  .actividades{
+    width: 80%;
+    margin: auto;
+    background-color: var(--third);
+    color: var(--fourth);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(70, 36, 36, 0.8);
+
+  }
+  .actividades h1{
+    position: relative;
+    font-size: 2rem;
+    color: var(--fourth);
+    text-align: center;
+  }
+
+  /*Actividades*/
+  .contenido-actividades{
+    display: block;
+    width: 50%;
+    padding-left: 10px;
+    text-align: justify;
+    flex: 1;
+    box-sizing: border-box;
+  }
+
+  .contenido-actividades h2{
+    padding-top: 10px;
+  }
+  .contenido-actividades img{
+    width: 300px;
+    height: auto;
+    display: inline-block;
+  }
+  /*Contactos importantes (aside)*/
+  .contacto-actividades{
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--secondary);
+    color: var(--fourth);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+    text-align: justify;
+
+  }.contacto-actividades h3{
+    font-size: 30px;
+  }
+  .contacto-actividades{
+    font-size: 20px;
+    color: var(--fourth);
+    
+  }
+  .contacto-actividades a{
+    text-decoration: none;
+    color: var(--fourth);
+  }
+  .contacto-consulta{
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10px;
+  }
