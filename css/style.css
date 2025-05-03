@@ -666,6 +666,10 @@ main.formulario button:hover {
 
   /*****Actividades******/
   .actividades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
     width: 80%;
     margin: auto;
     background-color: var(--third);
@@ -685,6 +689,9 @@ main.formulario button:hover {
   .contenido-actividades{
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    flex: 1 1 65%;
     justify-content: space-between;
     gap: 20%;
     width: 50%;
@@ -696,11 +703,14 @@ main.formulario button:hover {
   }
 
   .contenido-actividades >div{
-    flex: 1 1 45%;
+    flex: 1 1 65%;
     background-color: #2E6045;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10%;
     box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: justify;
+  
   }
   .contenido-actividades h2{
     padding-top: 10px;
@@ -709,9 +719,15 @@ main.formulario button:hover {
     width: 300px;
     height: auto;
     display: inline-block;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(70, 36, 36, 0.8);
   }
   /*Contactos importantes (aside)*/
   .contacto-actividades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
     width: 30%;
     margin: 10px;
     padding: 20px;
@@ -722,10 +738,10 @@ main.formulario button:hover {
     text-align: justify;
 
   }.contacto-actividades h3{
-    font-size: 30px;
+    font-size: 25px;
   }
   .contacto-actividades{
-    font-size: 20px;
+    font-size: 15px;
     color: var(--fourth);
     
   }
@@ -735,6 +751,6 @@ main.formulario button:hover {
   }
   .contacto-consulta{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     padding-top: 10px;
   }
