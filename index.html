@@ -3,71 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <title>Casa rural El Encanto</title>
-
-    <!--Para el icono del menú: Una librería json con código para iconos-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos: Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Para los iconos: Una librería json con código para iconos-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+
+    <title>Home</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="ckbox" class="drawer">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </label>
-            <h1>Casa rural El Encanto</h1>
-            <ul class="dropmenu">
-                <li>
-                    <a href="#" class="fa fa-home">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="fa fa-newspaper-o">Noticias</a>
-                </li>
-                <li>
-                    <a href="#" class="fa fa-users">Quiénes somos</a>
-                    <ul>
-                        <li><a href="#">Nuestra historia</a></li>
-                        <li><a href="#">El entorno</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="fa fa-star">Publicaciones</a>
-                </li>
-                <li>
-                    <a href="#" class="fa fa-coffee">Servicios</a>
-                    <ul>
-                        <li><a href="#">Alojamiento</a></li>
-                        <li><a href="#">Actividades</a></li>
-                        <li><a href="#">Colaboradores</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="fa fa-map-marker">Ubicación</a>
-                </li>
-                <li>
-                    <a href="#" class="fa fa-envelope">Contacto</a>
-                    <ul>
-                        <li><a href="#">Escríbenos</a></li>
-                        <li><a href="#">Reserva</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-        <ul>
-            <li><a href="#">Aviso legal</a></li>
-            <li><a href="#">Política de cookies</a></li>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Política de gestión ambiental</a></li>
+  <header>
+    <nav>
+        <div class="logo-title">
+          <img src="img/logo.png" alt="Logo El Encanto" class="logo">
+          <h1>Casa rural Con Encanto</h1>
+        </div>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox" class="drawer">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul class="dropmenu">
+            <li>
+                <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+            </li>
+            <li>
+                <a href="#blog"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Noticias</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-users" aria-hidden="true"></i>Quiénes somos</a>
+                <ul>
+                    <li><a href="#">Nuestra historia</a></li>
+                    <li><a href="#">El entorno</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#opiniones"><i class="fa fa-star" aria-hidden="true"></i>Comentarios</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-coffee" aria-hidden="true"></i>Servicios</a>
+                <ul>
+                    <li><a href="#">Alojamiento</a></li>
+                    <li><a href="#">Actividades</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Ubicación</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contacto</a>
+                <ul>
+                    <li><a href="contacto.html" target="_blank">Escríbenos</a></li>
+                    <li><a href="reserva.html" target="_blank">Reserva</a></li>
+                </ul>
+            </li>
         </ul>
-    </footer>  
+    </nav>
+</header>
+<main>
+    <div class="contenido-principal">
+      
+      <section class="casa-y-comentarios">
+        <div class="imagen-casa">
+          <img src="img/casa.jpg" alt="Casa rural Con Encanto">
+        </div>
+  
+        <section class="comentarios" id="opiniones">
+          <h2>Opiniones de nuestros visitantes</h2>
+        
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p>“Una experiencia inolvidable, tranquilidad total. ¡Volveremos!”</p>
+              </div>
+              <div class="flip-card-back">
+                <p> 10 / 10 <br> Laura G.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p>“Perfecto para ir con niños y desconectar del ruido y la ciudad.”</p>
+              </div>
+              <div class="flip-card-back">
+                <p> 8.5 / 10 <br> Carlos R.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p>“Maravilloso si necesitas días de relax y respirar aire fresco.”</p>
+              </div>
+              <div class="flip-card-back">
+                <p> 9 / 10 <br> Sara M.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p>“Personal muy amable y un ambiente con mucho encanto”</p>
+              </div>
+              <div class="flip-card-back">
+                <p> 9.5 / 10 <br> Héctor S.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p>“Días de desconexión total! Eva, Beatriz y Samantha son encantadoras”</p>
+              </div>
+              <div class="flip-card-back">
+                <p> 10 / 10 <br> Ana M.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+  
+      <aside class="noticias" id="blog">
+        <h2>Noticias</h2>
+        <ul>
+            <li>
+              <p class="destacado"><i class="fa fa-tree" aria-hidden="true"></i>Nueva temporada de setas</p>
+              <br>Los bosques cercanos están llenos de níscalos. ¡Perfecto para una excursión!
+            </li>
+            <li>
+              <p class="destacado"><i class="fa fa-music"></i>Fin de semana temático</p>
+              <br>Este sábado organizamos una noche de barbacoa y música en vivo.
+            </li>
+            <li>
+              <p class="destacado"><i class="fa fa-bed"></i>Renovamos habitaciones</p>
+              <br>Las nuevas habitaciones ya están disponibles, con vistas a la sierra.
+            </li>
+            <li>
+              <p class="destacado"><i class="fa fa-map-signs" aria-hidden="true"></i>Ruta guiada gratuita</p>
+              <br>Reserva tu estancia para el próximo puente e incluye una ruta ecológica guiada.
+            </li>
+            <li>
+              <p class="destacado"><i class="fa fa-leaf"></i>Nuevo colaborador</p>
+              <br>Ahora trabajamos con "Huerto Vivo", ofreciendo productos orgánicos locales.
+            </li>
+            <li>
+                <p class="destacado"><i class="fa fa-star" aria-hidden="true"></i>Excursión nocturna a las estrellas</p>
+                <br>Este fin de semana realizamos una excursión nocturna para observar las estrellas. ¡No te lo pierdas!
+              </li>
+              <li>
+                <p class="destacado"><i class="fa fa-glass" aria-hidden="true"></i>Cata de vinos local</p>
+                <br>Este mes, disfruta de una cata de vinos de la región, acompañada de tapas caseras.
+              </li>
+              <li>
+                <p class="destacado"><i class="fa fa-paint-brush"></i> Taller de pintura al aire libre</p>
+                <br>Descubre tu lado artístico rodeado de naturaleza. Taller guiado por una artista local. Material incluido.
+              </li>
+          </ul>
+      </aside>
+  
+    </div>
+  </main>
+<footer>
+    <ul>
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Política de cookies</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Política de gestión ambiental</a></li>
+    </ul>
+</footer>  
+<div class="copyright">
+  <p>&copy;Web Corporativa creada para la asignatura Lenguaje de Marcas del CFGS DAM
+      <br>Actividad 4 : Web Responsive con HTML y CSS
+  </p>
+</div>
 </body>
 </html>
