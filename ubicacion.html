@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ubicación</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Iconos: Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Para los iconos: Una librería json con código para iconos-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-title">
+        <img src="img/logo.png" alt="Logo El Encanto" class="logo">
+        <h1>Casa rural Con Encanto</h1>
+      </div>
+      <input type="checkbox" name="checkbox" id="checkbox">
+      <label for="checkbox" class="drawer">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+      </label>
+      <ul class="dropmenu">
+          <li>
+              <a href="index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+          </li>
+          <li>
+              <a href="#blog"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Noticias</a>
+          </li>
+          <li>
+              <a href="#"><i class="fa fa-users" aria-hidden="true"></i>Quiénes somos</a>
+              <ul>
+                  <li><a href="#">Nuestra historia</a></li>
+                  <li><a href="#">El entorno</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#opiniones"><i class="fa fa-star" aria-hidden="true"></i>Comentarios</a>
+          </li>
+          <li>
+              <a href="#"><i class="fa fa-coffee" aria-hidden="true"></i>Servicios</a>
+              <ul>
+                  <li><a href="#">Alojamiento</a></li>
+                  <li><a href="#">Actividades</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="ubicacion.html"><i class="fa fa-map-marker" aria-hidden="true"></i>Ubicación</a>
+          </li>
+          <li>
+              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contacto</a>
+              <ul>
+                  <li><a href="contacto.html">Escríbenos</a></li>
+                  <li><a href="reserva.html" target="_blank">Reserva</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+  </header>
+  <main class="ubicacion">
+    <div class="contenido-ubicacion">
+        <div class="mapa">
+            <h2>Ubicación de la Casa Rural</h2>
+            <p>La Casa Rural Con Encanto está ubicada en el corazón de la naturaleza, en Elizondo, Navarra, un lugar ideal para relajarse.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3461.563732904753!2d-1.5231647964121122!3d43.15038174706321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0xd50dfdff48774e7%3A0xbfb531c47001c536!2sElizondo%2C%2031700%2C%20Navarra!3m2!1d43.1424014!2d-1.5208198!4m5!1s0xd50dfdff48774e7%3A0xbfb531c47001c536!2sElizondo!3m2!1d43.1424014!2d-1.5208198!5e0!3m2!1ses!2ses!4v1746361052111!5m2!1ses!2ses" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <aside class="como-llegar">
+            <h2>Cómo Llegar</h2>
+            <ul>
+                <li><p><i class="fa fa-car" aria-hidden="true"></i>En coche:</p> Desde Madrid, toma la A-1 hasta Burgos, sigue por la AP-1 hacia Vitoria, luego la A-15 dirección Pamplona, 
+                       y finalmente la N-121-A hasta Elizondo. Duración aproximada: 5 horas.</li>
+                <li><p><i class="fa fa-bus" aria-hidden="true"></i>En Autobús:</p> Desde Madrid hay autobuses a Pamplona (por ejemplo, ALSA). Desde Pamplona, puedes tomar un autobús de 
+                    la compañía La Baztanesa hacia Elizondo. Total: unas 6–7 horas</li>
+                <li><p><i class="fa fa-train" aria-hidden="true"></i>En tren:</p> Viaja en tren desde Madrid a Pamplona (o San Sebastián). Luego toma un autobús a Elizondo. Es una opción cómoda pero requiere combinación.</li>
+                <li><p><i class="fa fa-taxi" aria-hidden="true"></i>En taxi:</p> Se puede contratar un taxi desde cualquier ciudad cercana.</li>
+            </ul>
+        </aside>
+    </div>
+</main>
+  <footer>
+    <ul>
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Política de cookies</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Política de gestión ambiental</a></li>
+    </ul>
+</footer>
+<div class="copyright">
+  <p>&copy;Web Corporativa creada para la asignatura Lenguaje de Marcas del CFGS DAM
+      <br>Actividad 4 : Web Responsive con HTML y CSS
+  </p>
+</div>
+</body>
+</html>
