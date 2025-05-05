@@ -41,7 +41,7 @@ header {
 
 
 .logo {
-  width: 60px;
+  width: 50px;
   height: auto;
 }
 
@@ -50,6 +50,8 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
+  z-index: 1; /* Asegura que el nav esté en la parte inferior */
 }
 
 nav h1 {
@@ -62,8 +64,8 @@ nav .drawer {
   display: none;
   font-size: 2rem;
   cursor: pointer;
-  margin-left: auto;
-  color: var(--fourth);
+  margin: auto;
+  color: var(--sixth);
 }
 
 #checkbox {
@@ -1038,7 +1040,7 @@ h3 {
   nav {
       justify-content: flex-start; /* justifica todo el contenido y lo inicializa en flex*/
   }
-  .drawer {
+  nav .drawer {
       display: block;
   }
   nav h1 {
@@ -1067,10 +1069,40 @@ h3 {
   #checkbox:checked~.dropmenu {   /* buscame dentro de esta clase esto otro*/
       left: 0;
   }
+  .dropmenu{
+    margin-top: -120px;
+    gap: 5px;
+  }
+  .dropmenu li a{
+    background-color: #54222a;
+  }
+  .dropmenu li ul{
+    left: 100%;
+    background-color: transparent;
+    top: -40px;
+  }
+
   .imagen-casa {
       display: none;
   }
   footer {
-      text-align: center;
+      padding: 30px 20px;
+      font-size: 2rem;
+  }
+  .imagen-elizondo-y-arizkun,
+  .imagen-castillo-amaiur {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 5px 20px 20px 0;
+    display: block;
+  }
+
+  /*responsive de reserva*/
+  .contenido-reserva {
+    flex-direction: column;
+  }
+  .formulario button {
+    width: 100%;
   }
 }
