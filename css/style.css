@@ -321,7 +321,7 @@ footer a:hover {
 
 /*Formulario de reserva */
 main.formulario {
-  max-width: 800px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
   background-color: var(--primary);
@@ -592,6 +592,89 @@ aside.info-contacto li {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+
+/* UBICACIÓN */
+
+main.ubicacion {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--fourth);
+}
+
+.contenido-ubicacion {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mapa {
+  flex: 1 1 60%;
+  /*para ocupar el 60% del espacio del contenedor*/
+  min-width: 400px;
+  background-color: var(--secondary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mapa h2,
+.como-llegar h2 {
+  font-size: 1.8rem;
+  color: var(--sixth);
+  text-shadow: 0 0 5px var(--fourth);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.mapa p {
+  color: var(--fourth);
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+
+}
+
+.mapa iframe {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.como-llegar {
+  flex: 1 1 30%;
+  min-width: 300px;
+  background-color: var(--third);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+.como-llegar ul {
+  list-style-type: none;
+  padding-left: 15px;
+  line-height: 1.5;
+}
+
+.como-llegar li {
+  font-size: 0.9rem;
+  color: var(--sixth);
+  margin: 20px 0;
+}
+
+.como-llegar li p {
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.como-llegar i {
+  margin-right: 8px;
 }
 
 
