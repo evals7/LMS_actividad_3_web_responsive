@@ -321,7 +321,7 @@ footer a:hover {
 
 /*Formulario de reserva */
 main.formulario {
-  max-width: 800px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
   background-color: var(--primary);
@@ -594,6 +594,260 @@ aside.info-contacto li {
   gap: 10px;
 }
 
+
+/* UBICACIÓN */
+
+main.ubicacion {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--fourth);
+}
+
+.contenido-ubicacion {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mapa {
+  flex: 1 1 60%;
+  /*para ocupar el 60% del espacio del contenedor*/
+  min-width: 400px;
+  background-color: var(--secondary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mapa h2,
+.como-llegar h2 {
+  font-size: 1.8rem;
+  color: var(--sixth);
+  text-shadow: 0 0 5px var(--fourth);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.mapa p {
+  color: var(--fourth);
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+
+}
+
+.mapa iframe {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.como-llegar {
+  flex: 1 1 30%;
+  min-width: 300px;
+  background-color: var(--third);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+.como-llegar ul {
+  list-style-type: none;
+  padding-left: 15px;
+  line-height: 1.5;
+}
+
+.como-llegar li {
+  font-size: 0.9rem;
+  color: var(--sixth);
+  margin: 20px 0;
+}
+
+.como-llegar li p {
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.como-llegar i {
+  margin-right: 8px;
+}
+
+
+/*******Alojamiento******/
+.alojamiento {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que el h1 esté en una línea aparte */
+  align-items: flex-start;
+  /*Evita que el aside se estire en altura */
+  width: 80%;
+  margin: auto;
+  background-color: var(--primary);
+  color: var(--fourth);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.alojamiento h1 {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: var(--fourth);
+  text-align: center;
+}
+
+/*Areas comunes*/
+.areas-comunes {
+  flex: 1 1 65%;
+  padding: 40px;
+  padding-left: 10px;
+  text-align: justify;
+}
+
+.areas-comunes h2 {
+  padding-top: 10px;
+}
+
+.areas-comunes img {
+  width: 70%;
+  height: auto;
+  display: inline-block;
+}
+
+/*Habitaciones (aside)*/
+.habitaciones-alojamiento {
+  flex: 1 1 35%;
+  padding: 20px;
+  background-color: var(--secondary);
+  color: var(--fourth);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+
+}
+
+.habitaciones-alojamiento h2,
+h3 {
+  color: var(--sixth);
+}
+
+.habitaciones-alojamiento div {
+  padding-top: 10px;
+}
+
+.boton-reserva {
+  background-color: var(--third);
+  color: var(--fourth);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.boton-reserva:hover {
+  background-color: var(--fifth);
+  color: var(--fourth);
+}
+
+/*****Actividades******/
+.actividades {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que el h1 esté en una línea aparte */
+  align-items: flex-start;
+  /*Evita que el aside se estire en altura */
+  width: 80%;
+  margin: auto;
+  background-color: var(--third);
+  color: var(--fourth);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(70, 36, 36, 0.8);
+
+}
+
+.actividades h1 {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  ;
+  font-size: 2rem;
+  color: var(--fourth);
+  text-align: center;
+}
+
+/*Actividades*/
+.contenido-actividades {
+  flex: 1 1 65%;
+  padding: 20px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.contenido-actividades div {
+  background-color: #2E6045;
+  padding: 30px;
+  border-radius: 18%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  text-align: justify;
+
+}
+
+.contenido-actividades h2 {
+  padding-top: 10px;
+
+}
+
+.contenido-actividades img {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(70, 36, 36, 0.8);
+}
+
+
+/*Contactos importantes (aside)*/
+.contacto-actividades {
+  flex: 1 1 35%;
+  padding: 20px;
+
+  background-color: var(--secondary);
+  color: var(--fourth);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+
+}
+
+.contacto-actividades h3 {
+  font-size: 25px;
+}
+
+.contacto-actividades {
+  font-size: 15px;
+  color: var(--fourth);
+
+}
+
+.contacto-actividades a {
+  text-decoration: none;
+  color: var(--fourth);
+}
+
+.contacto-consulta {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
 /* QUIENES SOMOS */
 
 /* Nuestra Historia */
@@ -809,4 +1063,3 @@ aside.info-contacto li {
   .puntos-de-interes h3 {
     font-size: 1.5rem;
   }
-}
