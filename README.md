@@ -2,9 +2,7 @@
     Este proyecto consiste en el desarrollo de una página web responsive utilizando HTML y CSS, realizado como parte de la Actividad 4: Web Responsive de la asignatura Lenguaje de Marcas en el CFGS en Desarrollo de Aplicaciones Multiplataforma (DAM).
 
 🏡 Descripción del Proyecto
-    La página web está dedicada a una casa rural ficticia ubicada en Navarra, llamada Casa Rural Con Encanto. Su diseño busca transmitir tranquilidad, naturaleza y hospitalidad a través de una estructura limpia y funcional.
-
-    Incluye elementos básicos de diseño responsive que permiten una correcta visualización tanto en dispositivos móviles como en pantallas de escritorio.
+    La página web está dedicada a una casa rural ficticia ubicada en Navarra, llamada Casa Rural Con Encanto. Su diseño busca transmitir tranquilidad, naturaleza y hospitalidad a través de una estructura limpia y funcional. Incluye elementos básicos de diseño responsive que permiten una correcta visualización tanto en dispositivos móviles como en pantallas de escritorio.
 
 📁 Estructura de Archivos
     /proyecto-casa-rural/
