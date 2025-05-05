@@ -1034,89 +1034,43 @@ h3 {
 }
 
 /* Responsive design */
-@media (max-width: 1024px) {
+@media(max-width:1020px) {
+  nav {
+      justify-content: flex-start; /* justifica todo el contenido y lo inicializa en flex*/
+  }
+  .drawer {
+      display: block;
+  }
   nav h1 {
-    font-size: 3rem;
+      margin-left: 1rem;
   }
-
-  .comentarios {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  ul {
+      position: fixed;
+      width: 50%;
+      height: 100vh;
+      background-color: var(--background);
+      top: 10vh;
+      left: -100%;
+      text-align: left;
+      transition: all .5s;
+      display: flex;
+      flex-direction: column;
+      align-content: stretch;
   }
-
-  .contenido-principal {
-    flex-direction: column;
+  nav ul li {
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      padding-left: 2rem;
+      border-bottom: solid .1rem rgba(201, 196, 196, 0.4);
   }
-
-  .contenido-reserva {
-    flex-direction: column;
+  #ckbox:checked~.menu-box {   /* buscame dentro de esta clase esto otro*/
+      left: 0;
   }
-
-  .contenido-reserva form,
-  .contenido-reserva aside {
-    min-width: 100%;
+  .image {
+      display: none;
   }
-
-  .formulario-contacto {
-    flex-direction: column;
-  }
-
-  section.contacto,
-  aside.info-contacto {
-    min-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  nav h1 {
-    font-size: 2.2rem;
-  }
-
-  .dropmenu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .dropmenu li ul {
-    position: static;
-    display: block;
-    background-color: transparent;
-    box-shadow: none;
-  }
-
-  .flip-card {
-    height: auto;
-  }
-
-  .noticias {
-    padding: 15px;
-  }
-
-  .copyright p {
-    margin-left: 0;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  nav h1 {
-    font-size: 1.8rem;
-  }
-
-  .dropmenu > li > a {
-    padding: 12px 15px;
-    font-size: 0.95rem;
-  }
-
-  .noticias h2 {
-    font-size: 1.5rem;
-  }
-
-  .room .slide img {
-    width: 100%;
-  }
-
-  main.formulario,
-  section.contacto {
-    padding: 15px;
+  footer {
+      text-align: center;
   }
 }
